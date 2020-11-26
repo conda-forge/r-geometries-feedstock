@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/geometries_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/geometries/geometries_{{ version }}.tar.gz
-  sha256: e697ce57c0471814f87df88b752b763adf67b12295554d96700fee2515c9f31d
+  sha256: 8cf5094f3c2458fef5d755799c766afd27c66cd1c292574a6ab532d608360314
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,13 +46,10 @@ test:
 about:
   home: https://dcooley.github.io/geometries/
   license: MIT
-  summary: Geometry shapes in 'R' are typically represented by matrices (points, lines), with
-    more complex shapes being lists of matrices (polygons). 'Geometries' will convert
-    various 'R' objects into these shapes. Conversion functions are available at both
-    the 'R' level, and through 'Rcpp'.
+  summary: Geometry shapes in 'R' are typically represented by matrices (points, lines), with more complex shapes being lists of matrices (polygons). 'Geometries' will convert various 'R' objects into these shapes. Conversion functions are available at both the 'R' level, and through 'Rcpp'.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
