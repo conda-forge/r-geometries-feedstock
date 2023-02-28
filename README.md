@@ -1,11 +1,22 @@
+About r-geometries-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-geometries-feedstock/blob/main/LICENSE.txt)
+
 About r-geometries
-==================
+------------------
 
 Home: https://dcooley.github.io/geometries/
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-geometries-feedstock/blob/main/LICENSE.txt)
+Summary: Geometry shapes in 'R' are typically represented by matrices (points, lines), with more complex shapes being lists of matrices (polygons). 'Geometries' will convert various 'R' objects into these shapes. Conversion functions are available at both the 'R' level, and through 'Rcpp'.
+About r-geometries
+------------------
+
+Home: https://dcooley.github.io/geometries/
+
+Package license: MIT
 
 Summary: Geometry shapes in 'R' are typically represented by matrices (points, lines), with more complex shapes being lists of matrices (polygons). 'Geometries' will convert various 'R' objects into these shapes. Conversion functions are available at both the 'R' level, and through 'Rcpp'.
 
